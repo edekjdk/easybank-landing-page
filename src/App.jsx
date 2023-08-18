@@ -1,5 +1,7 @@
+import { Nav } from './components/Nav/Nav';
+
 const App = () => {
-  return <p>Hello world</p>;
+  return <Nav></Nav>;
 };
 
 export default App;
