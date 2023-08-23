@@ -1,9 +1,9 @@
-export const InfoItem = () => {
+export const InfoItem = ({ image, title, text }) => {
   return (
     <article>
-      <img src='' alt='' />
-      <h3></h3>
-      <p></p>
+      <img src={image} alt='image' />
+      <h3>{title}</h3>
+      <p>{text}</p>
     </article>
   );
 };

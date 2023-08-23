@@ -38,7 +38,13 @@ export const InfoSection = () => {
         </p>
       </header>
       <section>
-        <InfoItem></InfoItem>
+        {data.map((item, index) => (
+          <InfoItem
+            key={index}
+            image={item.image}
+            title={item.title}
+            text={item.text}></InfoItem>
+        ))}
       </section>
     </section>
   );
