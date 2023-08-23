@@ -9,7 +9,6 @@ export const StyledSection = styled.section`
   @media screen and (min-width: 1440px) {
     margin: 0;
     max-width: 50%;
-    float: right;
   }
 `;
 
