@@ -10,6 +10,9 @@
   margin: 0;
   padding: 0;
   font-family: 'Public Sans', sans-serif;
+  /* color: #2bb7da;
+  color: #31d35c;
+  color: rgb(45, 49, 77); */
 }
 
 body {
@@ -24,7 +27,7 @@ video,
 canvas,
 svg {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
 }
 
 input,

@@ -38,6 +38,8 @@ export const StyledNav = styled.nav`
     position: absolute;
     top: 90px;
     left: 50%;
+    z-index: 1;
+    background-color: #fff;
     /* transform: translateX(-50%); */
     transform: ${(props) =>
       props.test === 'true' ? 'translateX(+100%)' : 'translateX(-50%)'};
