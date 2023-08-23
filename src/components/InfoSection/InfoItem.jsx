@@ -1,9 +1,9 @@
 export const InfoItem = () => {
   return (
-    <div>
+    <article>
       <img src='' alt='' />
       <h3></h3>
       <p></p>
-    </div>
+    </article>
   );
 };
