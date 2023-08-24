@@ -1,7 +1,8 @@
 import imageCurrency from '../../assets/images/imageCurrency.jpg';
 import imageRestaurant from '../../assets/images/imageRestaurant.jpg';
-import imagePlane from '../../assets/images/imageCuPlane.jpg';
+import imagePlane from '../../assets/images/imagePlane.jpg';
 import imageConfetti from '../../assets/images/imageConfetti.jpg';
+import { ArticleItem } from './ArticleItem';
 
 const data = [
   {
@@ -31,5 +32,17 @@ const data = [
 ];
 
 export const ArticlesSection = () => {
-  return <section></section>;
+  return (
+    <section>
+      {data.map((article, index) => (
+        <ArticleItem
+          key={index}
+          image={article.image}
+          author={article.author}
+          title={article.title}
+          text={article.text}
+        />
+      ))}
+    </section>
+  );
 };
