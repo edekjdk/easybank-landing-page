@@ -3,7 +3,11 @@ import iconApi from '../../assets/images/iconApi.svg';
 import iconBudgeting from '../../assets/images/iconBudgeting.svg';
 import iconOnboarding from '../../assets/images/icononboarding.svg';
 import iconOnline from '../../assets/images/iconOnline.svg';
-import { StyledMainSection, StyledHeader } from './style/InfoSection.styled';
+import {
+  StyledMainSection,
+  StyledHeader,
+  ItemsStyledSection,
+} from './style/InfoSection.styled';
 
 const data = [
   {
@@ -38,7 +42,7 @@ export const InfoSection = () => {
           financial hub. Control your finances laike never before
         </p>
       </StyledHeader>
-      <section>
+      <ItemsStyledSection>
         {data.map((item, index) => (
           <InfoItem
             key={index}
@@ -46,7 +50,7 @@ export const InfoSection = () => {
             title={item.title}
             text={item.text}></InfoItem>
         ))}
-      </section>
+      </ItemsStyledSection>
     </StyledMainSection>
   );
 };
