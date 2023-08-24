@@ -1,9 +1,11 @@
+import { StyledArticle } from './style/InfoItem.styled';
+
 export const InfoItem = ({ image, title, text }) => {
   return (
-    <article>
+    <StyledArticle>
       <img src={image} alt='image' />
       <h3>{title}</h3>
       <p>{text}</p>
-    </article>
+    </StyledArticle>
   );
 };

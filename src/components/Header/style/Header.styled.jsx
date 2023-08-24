@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
 
 export const TextSection = styled.section`
   color: hsl(233, 26%, 24%);
-  padding: 0 1.4rem;
+  padding: 0 1.4rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,6 +44,7 @@ export const TextSection = styled.section`
     max-width: 370px;
     text-align: center;
     margin: 1rem 0 2rem;
+    color: hsl(233, 8%, 62%);
 
     @media screen and (min-width: 1440px) {
       text-align: left;
