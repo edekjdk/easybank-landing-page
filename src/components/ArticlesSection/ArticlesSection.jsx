@@ -3,6 +3,10 @@ import imageRestaurant from '../../assets/images/imageRestaurant.jpg';
 import imagePlane from '../../assets/images/imagePlane.jpg';
 import imageConfetti from '../../assets/images/imageConfetti.jpg';
 import { ArticleItem } from './ArticleItem';
+import {
+  StyledMainSection,
+  ItemsSection,
+} from './style/ArticlesSection.styled';
 
 const data = [
   {
@@ -33,16 +37,19 @@ const data = [
 
 export const ArticlesSection = () => {
   return (
-    <section>
-      {data.map((article, index) => (
-        <ArticleItem
-          key={index}
-          image={article.image}
-          author={article.author}
-          title={article.title}
-          text={article.text}
-        />
-      ))}
-    </section>
+    <StyledMainSection>
+      <h2>Latest Articles</h2>
+      <ItemsSection>
+        {data.map((article, index) => (
+          <ArticleItem
+            key={index}
+            image={article.image}
+            author={article.author}
+            title={article.title}
+            text={article.text}
+          />
+        ))}
+      </ItemsSection>
+    </StyledMainSection>
   );
 };
