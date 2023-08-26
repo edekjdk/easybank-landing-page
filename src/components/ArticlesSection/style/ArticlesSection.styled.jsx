@@ -7,6 +7,10 @@ export const StyledMainSection = styled.section`
   align-items: center;
   justify-content: center;
 
+  @media screen and (min-width: 1440px) {
+    padding: 0 12rem;
+  }
+
   h2 {
     font-size: 2rem;
     font-weight: 500;
@@ -19,4 +23,11 @@ export const StyledMainSection = styled.section`
 export const ItemsSection = styled.section`
   width: 100%;
   max-width: 500px;
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    display: flex;
+    max-width: 100%;
+    gap: 1rem;
+  }
 `;
