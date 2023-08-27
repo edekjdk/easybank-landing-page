@@ -1,4 +1,8 @@
-import { StyledFooter, SocialsLinksUl } from './style/Footer.styled';
+import {
+  StyledFooter,
+  SocialsLinksUl,
+  NavigationLinksUl,
+} from './style/Footer.styled';
 import { Logo } from '../Utils/Logo';
 import { Button } from '../Utils/Button';
 import iconFacebook from '../../assets/images/iconFacebook.svg';
@@ -30,14 +34,14 @@ export const Footer = () => {
           </li>
         </SocialsLinksUl>
       </section>
-      <ul>
+      <NavigationLinksUl>
         <li>About Us</li>
         <li>Contact</li>
         <li>Blog</li>
         <li>Careers</li>
         <li>Support</li>
         <li>Privacy Policy</li>
-      </ul>
+      </NavigationLinksUl>
       <section>
         <Button />
         <h5>&copy; Easybank. All Rights Reserved</h5>

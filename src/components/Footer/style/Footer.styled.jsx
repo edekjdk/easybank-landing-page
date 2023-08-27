@@ -8,6 +8,12 @@ export const StyledFooter = styled.footer`
   flex-direction: column;
   align-items: center;
 
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+    padding: 3rem 12rem;
+    justify-content: space-between;
+  }
+
   ul {
   }
 
@@ -24,4 +30,12 @@ export const SocialsLinksUl = styled.ul`
   display: flex;
   gap: 0.6rem;
   margin: 1.5rem 0;
+`;
+
+export const NavigationLinksUl = styled.ul`
+  @media screen and (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5rem;
+  }
 `;
