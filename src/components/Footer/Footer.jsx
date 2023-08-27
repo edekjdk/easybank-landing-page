@@ -1,4 +1,4 @@
-import { StyledFooter } from './style/Footer.styled';
+import { StyledFooter, SocialsLinksUl } from './style/Footer.styled';
 import { Logo } from '../Utils/Logo';
 import { Button } from '../Utils/Button';
 import iconFacebook from '../../assets/images/iconFacebook.svg';
@@ -12,7 +12,7 @@ export const Footer = () => {
     <StyledFooter>
       <section>
         <Logo type={'light'} />
-        <ul>
+        <SocialsLinksUl>
           <li>
             <img src={iconFacebook} alt='fb' />
           </li>
@@ -28,7 +28,7 @@ export const Footer = () => {
           <li>
             <img src={iconInstagram} alt='ig' />
           </li>
-        </ul>
+        </SocialsLinksUl>
       </section>
       <ul>
         <li>About Us</li>
