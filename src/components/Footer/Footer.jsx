@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <section>
-        <Logo />
+        <Logo type={'light'} />
         <ul>
           <li>
             <img src={iconFacebook} alt='fb' />

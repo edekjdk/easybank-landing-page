@@ -13,7 +13,7 @@ export const Nav = () => {
 
   return (
     <StyledNav test={hide.toString()}>
-      <Logo></Logo>
+      <Logo type={'dark'}></Logo>
       <ul>
         <li>Home</li>
         <li>About</li>
